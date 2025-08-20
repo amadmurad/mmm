@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBuild Demo - With Real Images</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for image demo */
+        .button-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .demo-note {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #333;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .image-placeholder {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image-placeholder::before {
+            content: '📷';
+            font-size: 4rem;
+        }
+        
+        .image-placeholder::after {
+            content: 'Your Company Image Here';
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-building"></i>
+                <span>SkyBuild</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">SkyBuild</span>
+                <br>Modern Windows & Doors
+            </h1>
+            <p class="hero-subtitle">Transform your space with premium construction solutions</p>
+            
+            <!-- Demo Note -->
+            <div class="demo-note">
+                💡 This is a demo showing how your website will look with real images!
+            </div>
+            
+            <!-- Main Buttons Container -->
+            <div class="main-buttons">
+                <div class="button-container window-btn">
+                    <div class="button-content">
+                        <!-- Replace this icon with your window image -->
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop&crop=center" 
+                             alt="Modern Windows" 
+                             class="button-image">
+                        <h3>Windows</h3>
+                        <p>Modern & Energy Efficient</p>
+                        <div class="button-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="button-container door-btn">
+                    <div class="button-content">
+                        <!-- Replace this icon with your door image -->
+                        <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=200&h=200&fit=crop&crop=center" 
+                             alt="Premium Doors" 
+                             class="button-image">
+                        <h3>Doors</h3>
+                        <p>Elegant & Secure</p>
+                        <div class="button-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="hero-bg">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About SkyBuild</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>SkyBuild is your trusted partner in modern construction, specializing in premium windows and doors that combine style, functionality, and energy efficiency. With years of experience and dedication to quality, we transform spaces into beautiful, comfortable environments.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Energy Efficient</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-tools"></i>
+                            <span>Expert Installation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Replace this placeholder with your company image -->
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=400&fit=crop&crop=center" 
+                         alt="SkyBuild Construction" 
+                         style="width: 300px; height: 300px; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=100&h=100&fit=crop&crop=center" 
+                             alt="Windows" 
+                             style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3>Modern Windows</h3>
+                    <p>Energy-efficient windows with advanced insulation technology, available in various styles and materials.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=100&h=100&fit=crop&crop=center" 
+                             alt="Doors" 
+                             style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h3>Premium Doors</h3>
+                    <p>Elegant and secure doors crafted with precision, enhancing both aesthetics and security.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Installation</h3>
+                    <p>Professional installation services ensuring perfect fit and long-lasting performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@skybuild.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Construction Ave, City, State</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-building"></i>
+                    <span>SkyBuild</span>
+                </div>
+                <p>&copy; 2024 SkyBuild. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBuild - Modern Windows & Doors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">SkyBuild</span>
+                <br>Modern Windows & Doors
+            </h1>
+            <p class="hero-subtitle">Transform your space with premium construction solutions</p>
+            
+            <!-- Main Buttons Container -->
+            <div class="main-buttons">
+                <div class="button-container window-btn" onclick="openImageGrid('windows')">
+                    <div class="button-content">
+                        <div class="button-icon">
+                            <i class="fas fa-window-maximize"></i>
+                        </div>
+                        <h3>Windows</h3>
+                        <p>Modern & Energy Efficient</p>
+                        <div class="button-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="button-container door-btn" onclick="openImageGrid('doors')">
+                    <div class="button-content">
+                        <div class="button-icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <h3>Doors</h3>
+                        <p>Elegant & Secure</p>
+                        <div class="button-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="hero-bg">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@skybuild.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Construction Ave, City, State</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-building"></i>
+                    <span>SkyBuild</span>
+                </div>
+                <p>&copy; 2024 SkyBuild. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Grid Modal for Windows -->
+    <div id="windowsModal" class="image-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Our Windows Collection</h2>
+                <span class="close-modal" onclick="closeImageGrid('windows')">&times;</span>
+            </div>
+            <div class="image-grid">
+                <div class="image-item" onclick="openImageGallery('windows', 0)">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" alt="Modern Window 1">
+                    <div class="image-overlay">
+                        <h3>Modern Casement Window</h3>
+                        <p>Energy efficient design</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('windows', 1)">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" alt="Modern Window 2">
+                    <div class="image-overlay">
+                        <h3>Sliding Window</h3>
+                        <p>Space-saving solution</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('windows', 2)">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" alt="Modern Window 3">
+                    <div class="image-overlay">
+                        <h3>Bay Window</h3>
+                        <p>Elegant architectural feature</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('windows', 3)">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" alt="Modern Window 4">
+                    <div class="image-overlay">
+                        <h3>Picture Window</h3>
+                        <p>Maximum natural light</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('windows', 4)">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" alt="Modern Window 5">
+                    <div class="image-overlay">
+                        <h3>Awning Window</h3>
+                        <p>Ventilation with privacy</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('windows', 5)">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" alt="Modern Window 6">
+                    <div class="image-overlay">
+                        <h3>Double-Hung Window</h3>
+                        <p>Classic design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Grid Modal for Doors -->
+    <div id="doorsModal" class="image-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Our Doors Collection</h2>
+                <span class="close-modal" onclick="closeImageGallery()">&times;</span>
+            </div>
+            <div class="image-grid">
+                <div class="image-item" onclick="openImageGallery('doors', 0)">
+                    <img src="photo_2025-08-20_02-18-28.jpg" alt="Modern Door 1">
+                    <div class="image-overlay">
+                        <h3>Premium uPVC Door</h3>
+                        <p>Modern design with excellent insulation</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 1)">
+                    <img src="photo_2025-08-20_02-18-22.jpg" alt="Modern Door 2">
+                    <div class="image-overlay">
+                        <h3>Contemporary Entry Door</h3>
+                        <p>Elegant and secure entrance</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 2)">
+                    <img src="photo_2025-08-20_02-18-18.jpg" alt="Modern Door 3">
+                    <div class="image-overlay">
+                        <h3>Sliding Glass Door</h3>
+                        <p>Indoor-outdoor living experience</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 3)">
+                    <img src="photo_2025-08-20_02-18-13.jpg" alt="Modern Door 4">
+                    <div class="image-overlay">
+                        <h3>French Doors</h3>
+                        <p>Timeless sophistication</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 4)">
+                    <img src="photo_2025-08-20_02-18-09.jpg" alt="Modern Door 5">
+                    <div class="image-overlay">
+                        <h3>Barn Door</h3>
+                        <p>Rustic charm and character</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 5)">
+                    <img src="photo_2025-08-20_02-18-01.jpg" alt="Modern Door 6">
+                    <div class="image-overlay">
+                        <h3>Pocket Door</h3>
+                        <p>Space-saving design solution</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 6)">
+                    <img src="photo_2025-08-20_02-17-56.jpg" alt="Modern Door 7">
+                    <div class="image-overlay">
+                        <h3>Bifold Door</h3>
+                        <p>Versatile functionality</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 7)">
+                    <img src="photo_2025-08-20_02-17-50.jpg" alt="Modern Door 8">
+                    <div class="image-overlay">
+                        <h3>Panel Door</h3>
+                        <p>Classic panel design</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 8)">
+                    <img src="photo_2025-08-20_02-17-43.jpg" alt="Modern Door 9">
+                    <div class="image-overlay">
+                        <h3>Glass Panel Door</h3>
+                        <p>Natural light enhancement</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 9)">
+                    <img src="photo_2025-08-20_02-17-40.jpg" alt="Modern Door 10">
+                    <div class="image-overlay">
+                        <h3>Solid Wood Door</h3>
+                        <p>Premium quality construction</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 10)">
+                    <img src="photo_2025-08-20_02-17-36.jpg" alt="Modern Door 11">
+                    <div class="image-overlay">
+                        <h3>Composite Door</h3>
+                        <p>Durability meets style</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 11)">
+                    <img src="photo_2025-08-20_02-17-32.jpg" alt="Modern Door 12">
+                    <div class="image-overlay">
+                        <h3>Security Door</h3>
+                        <p>Enhanced protection</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 12)">
+                    <img src="photo_2025-08-20_02-17-27.jpg" alt="Modern Door 13">
+                    <div class="image-overlay">
+                        <h3>Luxury Entry Door</h3>
+                        <p>Premium architectural feature</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 13)">
+                    <img src="photo_2025-08-20_02-17-20.jpg" alt="Modern Door 14">
+                    <div class="image-overlay">
+                        <h3>Modern Sliding Door</h3>
+                        <p>Contemporary design</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 14)">
+                    <img src="Internal-Door.jpg" alt="Internal Door">
+                    <div class="image-overlay">
+                        <h3>Internal Door</h3>
+                        <p>Perfect for interior spaces</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 15)">
+                    <img src="mg_dt_1_upvc_doors_1.jpg" alt="uPVC Door">
+                    <div class="image-overlay">
+                        <h3>uPVC Door Collection</h3>
+                        <p>Energy efficient solution</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 16)">
+                    <img src="3l4-13-2-1-installed.png" alt="Installed Door">
+                    <div class="image-overlay">
+                        <h3>Professional Installation</h3>
+                        <p>Expert fitting service</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 17)">
+                    <img src="uPVC-3-scaled.jpg" alt="uPVC Door Scaled">
+                    <div class="image-overlay">
+                        <h3>uPVC Door Range</h3>
+                        <p>Wide selection available</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 18)">
+                    <img src="Blog2_uPVC_Bathroom_Door-1_11zon-1024x1024.jpg" alt="Bathroom Door">
+                    <div class="image-overlay">
+                        <h3>Bathroom Door</h3>
+                        <p>Moisture resistant design</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 19)">
+                    <img src="1.jpg" alt="Door Style 1">
+                    <div class="image-overlay">
+                        <h3>Contemporary Style</h3>
+                        <p>Modern aesthetic appeal</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 20)">
+                    <img src="2.jpg" alt="Door Style 2">
+                    <div class="image-overlay">
+                        <h3>Classic Design</h3>
+                        <p>Timeless elegance</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 21)">
+                    <img src="3.jpg" alt="Door Style 3">
+                    <div class="image-overlay">
+                        <h3>Modern Appeal</h3>
+                        <p>Contemporary charm</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 22)">
+                    <img src="images.jpg" alt="Door Collection">
+                    <div class="image-overlay">
+                        <h3>Door Collection</h3>
+                        <p>Comprehensive range</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 23)">
+                    <img src="images (1).jpg" alt="Door Style 4">
+                    <div class="image-overlay">
+                        <h3>Elegant Design</h3>
+                        <p>Sophisticated style</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 24)">
+                    <img src="images (2).jpg" alt="Door Style 5">
+                    <div class="image-overlay">
+                        <h3>Premium Quality</h3>
+                        <p>Exceptional craftsmanship</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 25)">
+                    <img src="images (4).jpg" alt="Door Style 6">
+                    <div class="image-overlay">
+                        <h3>Modern Collection</h3>
+                        <p>Contemporary designs</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 26)">
+                    <img src="images (7).jpg" alt="Door Style 7">
+                    <div class="image-overlay">
+                        <h3>Style Variety</h3>
+                        <p>Multiple options available</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openImageGallery('doors', 27)">
+                    <img src="download.jpg" alt="Door Download">
+                    <div class="image-overlay">
+                        <h3>Download Catalog</h3>
+                        <p>View full collection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Gallery Modal -->
+    <div id="imageGalleryModal" class="image-gallery-modal">
+        <div class="gallery-content">
+            <span class="gallery-close" onclick="closeImageGallery()">&times;</span>
+            <div class="gallery-image-container">
+                <img id="galleryImage" src="" alt="Gallery Image">
+            </div>
+            <div class="gallery-navigation">
+                <button class="gallery-nav-btn prev-btn" onclick="previousImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <span class="gallery-counter">
+                    <span id="currentImageIndex">1</span> / <span id="totalImages">1</span>
+                </span>
+                <button class="gallery-nav-btn next-btn" onclick="nextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
